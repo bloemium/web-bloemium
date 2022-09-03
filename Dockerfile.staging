@@ -37,7 +37,7 @@ COPY --from=deps /app/node_modules /app/node_modules
 # RUN npx prisma generate
 
 ADD . .
-RUN npm run build
+RUN npm run dev
 
 # Finally, build the staging image
 FROM base
