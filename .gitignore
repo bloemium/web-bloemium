@@ -1,2 +1,10 @@
+node_modules
+
+/.cache
+/build
+/public/build
+.env
+
 .DS_Store
 .vscode/settings.json
+app/main.css
