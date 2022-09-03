@@ -1,12 +1,14 @@
 name: Fly Deploy (Staging)
-on: [push]
+on:
+  push:
+    branches:
+      - develop
 env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 jobs:
   deploy:
       name: Deploy app to staging
       runs-on: ubuntu-latest
-      if: github.ref == 'refs/heads/develop'
       steps:
         - uses: actions/checkout@v2
         - uses: superfly/flyctl-actions/setup-flyctl@master
