@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import type { LinksFunction, MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -10,9 +10,16 @@ import {
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "Bloemium",
+  description: "bloemium software development services",
   viewport: "width=device-width,initial-scale=1",
+  keywords:
+    "bloemium, software, development, typescript, javascript, frontend, react, remix, full-stack, cloud, azure, o365, office 365, sharepoint, sharepoint online, spo",
 });
+
+export const links: LinksFunction = () => {
+  return [{ rel: "canonical", href: 'https://bloemium.com' }];
+};
 
 export default function App() {
   return (
@@ -21,7 +28,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-neutral-900">
         <Outlet />
         <ScrollRestoration />
         <Scripts />
