@@ -7,6 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import mainStyle from "./main.css";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -18,7 +19,10 @@ export const meta: MetaFunction = () => ({
 });
 
 export const links: LinksFunction = () => {
-  return [{ rel: "canonical", href: 'https://bloemium.com' }];
+  return [
+    { rel: "canonical", href: "https://bloemium.com" },
+    { rel: "stylesheet", href: mainStyle },
+  ];
 };
 
 export default function App() {
