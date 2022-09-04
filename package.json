@@ -12,7 +12,8 @@
     "staging": "npm run staging:css && remix build --sourcemap",
     "staging:css": "tailwindcss -o ./app/styles/main.css",
     "start": "remix-serve build",
-    "refresh": "rm -rf node_modules && npm i"
+    "refresh": "rm -rf node_modules && npm i",
+    "validate": "npm run lint && npm run format:check"
   },
   "dependencies": {
     "@remix-run/node": "1.7.0",
