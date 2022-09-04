@@ -6,6 +6,7 @@ import {renderToPipeableStream} from 'react-dom/server'
 
 const ABORT_DELAY = 5000
 
+// eslint-disable-next-line max-params
 export default function handleRequest(
   request: Request,
   responseStatusCode: number,
