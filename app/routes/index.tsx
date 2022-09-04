@@ -1,4 +1,4 @@
-import { MailForm } from "~/components/mailform";
+import {MailForm} from '~/components/mailform'
 
 export default function Index() {
   return (
@@ -6,8 +6,10 @@ export default function Index() {
       <div className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-500">
         <h1 className="text-3xl font-bold">Bloemium</h1>
         <p>Software development &amp; consulting</p>
-        <p><MailForm /></p>
+        <p>
+          <MailForm />
+        </p>
       </div>
     </div>
-  );
+  )
 }
