@@ -9,7 +9,7 @@
     "format": "prettier .",
     "format:check": "prettier --check .",
     "staging": "npm run staging:css && remix build --sourcemap",
-    "staging:css": "tailwindcss -o ./app/main.css",
+    "staging:css": "tailwindcss -o ./app/styles/main.css",
     "start": "remix-serve build",
     "refresh": "rm -rf node_modules && npm i"
   },
