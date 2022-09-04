@@ -3,11 +3,13 @@
   "sideEffects": false,
   "scripts": {
     "build": "npm run build:css && remix build",
-    "build:css": "tailwindcss -o ./app/main.css --minify",
-    "staging": "npm run staging:css && remix build --sourcemap",
-    "staging:css": "tailwindcss -o ./app/main.css",
+    "build:css": "tailwindcss -o ./app/styles/main.css --minify",
     "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
-    "dev:css": "tailwindcss -o ./app/main.css --watch",
+    "dev:css": "tailwindcss -o ./app/styles/main.css --watch",
+    "format": "prettier .",
+    "format:check": "prettier --check .",
+    "staging": "npm run staging:css && remix build --sourcemap",
+    "staging:css": "tailwindcss -o ./app/styles/main.css",
     "start": "remix-serve build",
     "refresh": "rm -rf node_modules && npm i"
   },
