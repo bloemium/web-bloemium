@@ -6,3 +6,8 @@ node_modules
 .DS_Store
 .vscode/settings.json
 app/styles/main.css
+remix.config.js
+tailwind.config.js
+package.json
+package-lock.json
+tsconfig.json

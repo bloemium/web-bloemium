@@ -4,14 +4,16 @@
     "@remix-run/eslint-config",
     "@remix-run/eslint-config/node",
     "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2022,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
   },
   "rules": {
     "array-callback-return": "error",
@@ -20,6 +22,7 @@
     "max-lines": "error",
     "max-lines-per-function": "error",
     "max-nested-callbacks": "error",
+    "@typescript-eslint/no-explicit-any": "error",
     "no-await-in-loop": "error",
     "no-duplicate-imports": "off",
     "@typescript-eslint/no-duplicate-imports": "error",

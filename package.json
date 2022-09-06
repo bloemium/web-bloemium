@@ -9,6 +9,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
+    "setup": "npm run refresh && husky install && npm run validate",
     "staging": "npm run staging:css && remix build --sourcemap",
     "staging:css": "tailwindcss -o ./app/styles/main.css",
     "start": "remix-serve build",
