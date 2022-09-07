@@ -9,12 +9,13 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
+    "refresh": "rm -rf node_modules && npm i",
     "setup": "npm run refresh && husky install && npm run validate",
     "staging": "npm run staging:css && remix build --sourcemap",
     "staging:css": "tailwindcss -o ./app/styles/main.css",
+    "test": "jest",
     "start": "remix-serve build",
-    "refresh": "rm -rf node_modules && npm i",
-    "validate": "npm run lint && npm run format:check"
+    "validate": "npm run format && npm run lint && npm run test"
   },
   "dependencies": {
     "@remix-run/node": "1.7.0",
@@ -27,7 +28,7 @@
   "devDependencies": {
     "@remix-run/dev": "1.7.0",
     "@remix-run/eslint-config": "1.7.0",
-    "@types/jest": "^29.0.0",
+    "@types/jest": "29.0.0",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "5.36.1",
@@ -44,6 +45,7 @@
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
     "tailwindcss": "3.1.8",
+    "ts-jest": "29.0.0-next.1",
     "typescript": "4.8.2"
   },
   "engines": {

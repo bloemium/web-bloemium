@@ -6,8 +6,5 @@ const __dirname = fileURLToPath(import.meta.url)
 export default {
   rootDir: path.join(__dirname, '..'),
   collectCoverageFrom: ['app'],
-  projects: [
-    "./test/jest.lint.js",
-    "./test/jest.bloemium.js",
-  ]
+  projects: ['./test/jest.lint.mjs', './test/jest.bloemium.mjs'],
 }

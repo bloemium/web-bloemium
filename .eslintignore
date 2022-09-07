@@ -11,5 +11,3 @@ tailwind.config.js
 package.json
 package-lock.json
 tsconfig.json
-test/jest.bloemium.js
-test/jest.lint.js
