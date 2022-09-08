@@ -1,5 +1,5 @@
 {
-  "*.{js,ts,tsx,json}": [
+  "*.{js,mjs,ts,tsx,json}": [
     "prettier --check",
     "eslint"
   ],
