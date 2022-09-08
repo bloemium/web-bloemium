@@ -1,4 +1,4 @@
-import {MailForm} from '~/components/mailform'
+import {MailForm} from '~/components/mail-form'
 
 export default function Index() {
   return (
